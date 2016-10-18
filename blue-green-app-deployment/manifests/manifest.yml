@@ -4,3 +4,4 @@ applications:
   command: node index.js
   buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
   instances: 1
+  memory: 512M
