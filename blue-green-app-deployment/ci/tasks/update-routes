@@ -31,6 +31,7 @@ echo "Removing previous main app route that pointed to $CURRENT_APP_HOSTNAME ins
 
 set +e
 cf unmap-route $CURRENT_APP_HOSTNAME $PWS_DOMAIN_NAME --hostname $MAIN_ROUTE_HOSTNAME
+cf delete $CURRENT_APP_HOSTNAME
 set -e
 
 echo "Routes updated"
